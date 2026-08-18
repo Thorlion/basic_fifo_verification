@@ -1,0 +1,80 @@
+# vsim +TESTNAME=single_rw -do {run -all; quit} -l sim.log -c -voptargs=+acc -wlf wave.wlf tb_top_fifo 
+# ** Note: (vsim-3812) Design is being optimized...
+# 
+# //  Questa Sim-64
+# //  Version 10.2c Unknown Platform Jul 19 2013
+# //
+# //  Copyright 1991-2013 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# Loading sv_std.std
+# Loading work.fifo_pkg(fast)
+# Loading work.fifo_v_unit(fast)
+# Loading work.tb_top_fifo(fast)
+# Loading work.inf_fifo(fast)
+# Loading work.fifo(fast)
+# Loading work.FIFO_MEM_BLK(fast)
+# ** Warning: (vsim-PLI-3003) ../testbench/tb_top_fifo.sv(35): [TOFD] - System task or function '$fsdbDumpfile' is not defined.
+# 
+#         Region: /tb_top_fifo
+# ** Warning: (vsim-PLI-3003) ../testbench/tb_top_fifo.sv(36): [TOFD] - System task or function '$fsdbDumpvars' is not defined.
+# 
+#         Region: /tb_top_fifo
+# run -all 
+# num_trans:           1
+# num_trans:           2
+# num_trans:           3
+# num_trans:           4
+# num_trans:           5
+# num_trans:           6
+# [TEST] Starting single read and write test...
+# Mailbox sent:           6 transactions
+# [SCOREBOARD] Started...
+# ------------------------------------------------------------
+# [SCOREBOARD] Transaction. Time = 120000
+#   INPUT: Write=1 Read=0 Clr=0 Data_In=2f825948
+#   MONITOR : Data=2f825948 EmptyN=0 FullN=0 FirstN=1 SLastN=0 LastN=0 
+#   EXPECTED: Data=2f825948 EmptyN=0 FullN=0 FirstN=1 SLastN=0 LastN=0
+# [SCOREBOARD] [PASS] All data and flags match.
+# ------------------------------------------------------------
+# [SCOREBOARD] Transaction. Time = 130000
+#   INPUT: Write=0 Read=0 Clr=0 Data_In=a938b0a
+#   MONITOR : Data=2f825948 EmptyN=0 FullN=0 FirstN=1 SLastN=0 LastN=0 
+#   EXPECTED: Data=2f825948 EmptyN=0 FullN=0 FirstN=1 SLastN=0 LastN=0
+# [SCOREBOARD] [PASS] All data and flags match.
+# ------------------------------------------------------------
+# [SCOREBOARD] Transaction. Time = 140000
+#   INPUT: Write=1 Read=1 Clr=0 Data_In=ed8fffa4
+#   MONITOR : Data=ed8fffa4 EmptyN=0 FullN=0 FirstN=1 SLastN=0 LastN=0 
+#   EXPECTED: Data=ed8fffa4 EmptyN=0 FullN=0 FirstN=1 SLastN=0 LastN=0
+# [SCOREBOARD] [PASS] All data and flags match.
+# ------------------------------------------------------------
+# [SCOREBOARD] Transaction. Time = 150000
+#   INPUT: Write=0 Read=0 Clr=0 Data_In=c451b267
+#   MONITOR : Data=ed8fffa4 EmptyN=0 FullN=0 FirstN=1 SLastN=0 LastN=0 
+#   EXPECTED: Data=ed8fffa4 EmptyN=0 FullN=0 FirstN=1 SLastN=0 LastN=0
+# [SCOREBOARD] [PASS] All data and flags match.
+# ------------------------------------------------------------
+# [SCOREBOARD] Transaction. Time = 160000
+#   INPUT: Write=1 Read=1 Clr=0 Data_In=a3b22bda
+#   MONITOR : Data=a3b22bda EmptyN=0 FullN=0 FirstN=1 SLastN=0 LastN=0 
+#   EXPECTED: Data=a3b22bda EmptyN=0 FullN=0 FirstN=1 SLastN=0 LastN=0
+# [SCOREBOARD] [PASS] All data and flags match.
+# ------------------------------------------------------------
+# [SCOREBOARD] Transaction. Time = 170000
+#   INPUT: Write=0 Read=0 Clr=0 Data_In=739310c3
+#   MONITOR : Data=a3b22bda EmptyN=0 FullN=0 FirstN=1 SLastN=0 LastN=0 
+#   EXPECTED: Data=a3b22bda EmptyN=0 FullN=0 FirstN=1 SLastN=0 LastN=0
+# [SCOREBOARD] [PASS] All data and flags match.
+# =======================================
+#           SCOREBOARD SUMMARY           
+# =======================================
+#  Total Matches: 6
+#  Total Errors : 0
+# =======================================
+# ** Note: $finish    : ../testbench/tb_top_fifo.sv(122)
+#    Time: 205 ns  Iteration: 0  Instance: /tb_top_fifo
