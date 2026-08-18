@@ -24,7 +24,6 @@ interface inf_fifo (
         output FClrN;
     endclocking
 
-
     clocking monitor_cb @(posedge Clk);
         default input #0;
 

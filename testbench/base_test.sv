@@ -21,6 +21,5 @@ class base_test;
             env.gen.send(op, random, data);
         end
     endfunction
-
     
 endclass

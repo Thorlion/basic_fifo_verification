@@ -116,8 +116,7 @@ module tb_top_fifo;
 
         test.build();
         test.run();
-        #100;
-        //wait(test.env.scb.pass_count + test.env.scb.error_count == test.env.gen.num_trans);
+        wait(test.env.scb.completed);
         test.env.scb.print_summary();
         $finish;
     end

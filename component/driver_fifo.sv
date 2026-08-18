@@ -9,7 +9,7 @@ class driver_fifo;
 
     task run();
         trans_fifo tx;
-        
+        // Initial values
         vif.driver_cb.FClrN <= 1'b1;  
         vif.driver_cb.FInN <= 1'b1;   
         vif.driver_cb.FOutN <= 1'b1; 
@@ -23,4 +23,5 @@ class driver_fifo;
             vif.driver_cb.Data_In <= tx.Data_In;
         end
     endtask 
+    
 endclass

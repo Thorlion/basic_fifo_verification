@@ -4,6 +4,7 @@ class trans_fifo;
     bit         FClrN;
     bit         FInN;
     bit         FOutN;
+    bit         Rst_N;
     rand bit [31:0] Data_In;
 
     // Outputs (captured from DUT)

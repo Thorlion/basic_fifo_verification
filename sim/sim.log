@@ -1,5 +1,5 @@
-# vsim +TESTNAME=single_rw -do {run -all; quit} -l sim.log -c -voptargs=+acc -wlf wave.wlf tb_top_fifo 
-# ** Note: (vsim-3812) Design is being optimized...
+# vsim +TESTNAME=clr_write -do {run -all; quit} -l sim.log -c -voptargs=+acc -wlf wave.wlf tb_top_fifo 
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
 # 
 # //  Questa Sim-64
 # //  Version 10.2c Unknown Platform Jul 19 2013
@@ -29,52 +29,18 @@
 # num_trans:           2
 # num_trans:           3
 # num_trans:           4
-# num_trans:           5
-# num_trans:           6
-# [TEST] Starting single read and write test...
-# Mailbox sent:           6 transactions
-# [SCOREBOARD] Started...
-# ------------------------------------------------------------
-# [SCOREBOARD] Transaction. Time = 120000
-#   INPUT: Write=1 Read=0 Clr=0 Data_In=2f825948
-#   MONITOR : Data=2f825948 EmptyN=0 FullN=0 FirstN=1 SLastN=0 LastN=0 
-#   EXPECTED: Data=2f825948 EmptyN=0 FullN=0 FirstN=1 SLastN=0 LastN=0
-# [SCOREBOARD] [PASS] All data and flags match.
-# ------------------------------------------------------------
-# [SCOREBOARD] Transaction. Time = 130000
-#   INPUT: Write=0 Read=0 Clr=0 Data_In=a938b0a
-#   MONITOR : Data=2f825948 EmptyN=0 FullN=0 FirstN=1 SLastN=0 LastN=0 
-#   EXPECTED: Data=2f825948 EmptyN=0 FullN=0 FirstN=1 SLastN=0 LastN=0
-# [SCOREBOARD] [PASS] All data and flags match.
-# ------------------------------------------------------------
-# [SCOREBOARD] Transaction. Time = 140000
-#   INPUT: Write=1 Read=1 Clr=0 Data_In=ed8fffa4
-#   MONITOR : Data=ed8fffa4 EmptyN=0 FullN=0 FirstN=1 SLastN=0 LastN=0 
-#   EXPECTED: Data=ed8fffa4 EmptyN=0 FullN=0 FirstN=1 SLastN=0 LastN=0
-# [SCOREBOARD] [PASS] All data and flags match.
-# ------------------------------------------------------------
-# [SCOREBOARD] Transaction. Time = 150000
-#   INPUT: Write=0 Read=0 Clr=0 Data_In=c451b267
-#   MONITOR : Data=ed8fffa4 EmptyN=0 FullN=0 FirstN=1 SLastN=0 LastN=0 
-#   EXPECTED: Data=ed8fffa4 EmptyN=0 FullN=0 FirstN=1 SLastN=0 LastN=0
-# [SCOREBOARD] [PASS] All data and flags match.
-# ------------------------------------------------------------
-# [SCOREBOARD] Transaction. Time = 160000
-#   INPUT: Write=1 Read=1 Clr=0 Data_In=a3b22bda
-#   MONITOR : Data=a3b22bda EmptyN=0 FullN=0 FirstN=1 SLastN=0 LastN=0 
-#   EXPECTED: Data=a3b22bda EmptyN=0 FullN=0 FirstN=1 SLastN=0 LastN=0
-# [SCOREBOARD] [PASS] All data and flags match.
-# ------------------------------------------------------------
-# [SCOREBOARD] Transaction. Time = 170000
-#   INPUT: Write=0 Read=0 Clr=0 Data_In=739310c3
-#   MONITOR : Data=a3b22bda EmptyN=0 FullN=0 FirstN=1 SLastN=0 LastN=0 
-#   EXPECTED: Data=a3b22bda EmptyN=0 FullN=0 FirstN=1 SLastN=0 LastN=0
-# [SCOREBOARD] [PASS] All data and flags match.
+# [TEST] Starting multiple read and write test...
+# Mailbox sent:           4 transactions
+# [SCOREBOARD] Started
+# [SCOREBOARD] Transaction no.4 data mismatch: expected=a3b22bda actual=ed8fffa4
+# ** Error: [SCOREBOARD] Check 4 failed at time 150000
+#    Time: 150 ns  Scope: fifo_v_unit.scb_fifo.scb_fifo__1.check File: ../component/scb_fifo.sv Line: 52
 # =======================================
-#           SCOREBOARD SUMMARY           
+#           SCOREBOARD SUMMARY
 # =======================================
-#  Total Matches: 6
-#  Total Errors : 0
+#  Total Checks  : 4
+#  Total Matches : 3
+#  Total Errors  : 1
 # =======================================
-# ** Note: $finish    : ../testbench/tb_top_fifo.sv(122)
-#    Time: 205 ns  Iteration: 0  Instance: /tb_top_fifo
+# ** Note: $finish    : ../testbench/tb_top_fifo.sv(121)
+#    Time: 150 ns  Iteration: 5  Instance: /tb_top_fifo

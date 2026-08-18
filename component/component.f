@@ -4,6 +4,7 @@
 ../component/gen_fifo.sv
 ../component/driver_fifo.sv
 ../component/monitor_fifo.sv
+../component/fifo_model.sv
 ../component/scb_fifo.sv
 ../component/env_fifo.sv
 

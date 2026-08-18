@@ -80,7 +80,6 @@ class gen_fifo;
         q.push_back(tx);
         num_trans++;
         $display("num_trans: %d", num_trans);
-
     endfunction
 
     task run();
