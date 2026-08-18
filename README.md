@@ -2,7 +2,7 @@
 
 This project verifies a 32-bit, four-entry first-word fall-through (FWFT) FIFO with a lightweight class-based SystemVerilog testbench. The environment drives directed FIFO operations, monitors the DUT interface, predicts expected behavior with a queue-based reference model, and reports data or status-flag mismatches through a scoreboard.
 
-The FIFO behavior documented here is provisional because an external RTL specification is not currently available. The reference model therefore captures the assumptions described below rather than copying the RTL implementation.
+The FIFO behavior documented here is provisional because __RTL specification is not available__. The reference model therefore captures the assumptions described below rather than copying the RTL implementation.
 
 ## Architecture
 
@@ -108,16 +108,26 @@ Run commands from the `sim` directory:
 ```sh
 cd sim
 make build
-make run TESTNAME=single_rnw
 ```
-
-Build and run in one command:
+Then run a test:
 
 ```sh
-make all TESTNAME=multiple_rnw
+make run TESTNAME=<test_name>
 ```
 
-Open the generated WLF waveform:
+For example:
+
+```
+make run TESTNAME=single_rw
+```
+
+Or just build and run in one command:
+
+```sh
+make all TESTNAME=single_rnw
+```
+
+Open the generated WLF waveform (WIP, may not work):
 
 ```sh
 make wave
@@ -131,6 +141,7 @@ make clean
 
 ## Available tests
 
+Link to the [test plan](https://docs.google.com/spreadsheets/d/1S21at9cabVC-6_uONsB6Gz7GRvhgDgwOBXB7iNT7k-o/edit?usp=sharing)
 | Test name | Main scenario |
 |---|---|
 | `base_test` | Environment startup with no generated traffic |
