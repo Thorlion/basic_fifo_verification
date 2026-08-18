@@ -1,0 +1,3 @@
+-f ../rtl/rtl.f
+-f ../component/component.f
+-f ../testbench/testbench.f

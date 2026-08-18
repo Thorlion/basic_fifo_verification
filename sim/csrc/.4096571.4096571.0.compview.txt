@@ -1,0 +1,11 @@
+{"vcs1":{"timestamp_begin":1785491725.893704039, "rt":0.59, "ut":0.14, "st":0.09}}
+{"vcselab":{"timestamp_begin":1785491726.521387173, "rt":0.18, "ut":0.09, "st":0.03}}
+{"link":{"timestamp_begin":1785491726.731040450, "rt":0.65, "ut":0.06, "st":0.06}}
+{"SNPS_VCS_INTERNAL_ROOT_START_TIME": 1785491725.737395292}
+{"VCS_COMP_START_TIME": 1785491725.737395292}
+{"VCS_COMP_END_TIME": 1785491727.460140652}
+{"elabcom":{"timestamp_begin":1785491725.997419937,"rt":0.42, "ut":0.00, "st":0.01}}
+{"VCS_USER_OPTIONS": "-full64 -sverilog -timescale=1ns/1ps -debug_access+all -kdb -f compile.f -top tb_top_fifo -o simv -l comp.log"}
+{"kdb": {"elabcom_name":"<Kdbresolver>", "log_dir":"simv.daidir/kdbresolverLog"}}
+{"vcs1": {"peak_mem": 395288}}
+{"vcselab": {"peak_mem": 167024}}

@@ -1,0 +1,182 @@
+0
+66
++itf+/opt/synopsys/vcs/X-2025.06/linux64/lib/vcsdp_lite.tab
++vcsd1
++vpi
+-Mamsrun=
+-Masflags=
+-Mcc=gcc
+-Mcfl= -pipe -fPIC -O -I/opt/synopsys/vcs/X-2025.06/include
+-Mcplusplus=g++
+-Mcrt0=
+-Mcrtn=
+-Mcsrc=
+-Mexternalobj=
+-Mldflags= -rdynamic
+-Mobjects= /opt/synopsys/vcs/X-2025.06/linux64/lib/libvirsim.so /opt/synopsys/vcs/X-2025.06/linux64/lib/liberrorinf.so /opt/synopsys/vcs/X-2025.06/linux64/lib/libsnpsmalloc.so /opt/synopsys/vcs/X-2025.06/linux64/lib/libvfs.so
+-Mout=simv
+-Msaverestoreobj=/opt/synopsys/vcs/X-2025.06/linux64/lib/vcs_save_restore_new.o
+-Msyslibs=/opt/synopsys/verdi/X-2025.06/share/PLI/VCS/LINUX64/pli.a -ldl
+-Mvcsaceobjs=
+-Mxcflags= -pipe -fPIC -I/opt/synopsys/vcs/X-2025.06/include
+-Mxllcflags=
+-P
+-Xfile_begin_f=../component/component.f
+-Xfile_begin_f=../rtl/rtl.f
+-Xfile_begin_f=../testbench/testbench.f
+-Xfile_begin_f=compile.f
+-Xfile_end
+-Xfile_end
+-Xfile_end
+-Xfile_end
+-Xhdlxmropt
+-Xufe=2steps
+-debug_access+all
+-fsdb
+-full64
+-gen_obj
+-kdb
+-l
+-o simv
+-picarchive
+-sverilog
+-timescale=1ns/1ps
+-top
+/opt/synopsys/vcs/X-2025.06/linux64/bin/vcs1fe
+comp.log
+tb_top_fifo
+simv
+/opt/synopsys/verdi/X-2025.06/share/PLI/VCS/LINUX64/verdi.tab
+../rtl/fifo.v
+../component/fifo_pkg.sv
+../component/inf_fifo.sv
+../component/trans_fifo.sv
+../component/gen_fifo.sv
+../component/driver_fifo.sv
+../component/monitor_fifo.sv
+../component/scb_fifo.sv
+../component/env_fifo.sv
+../testbench/base_test.sv
+../testbench/single_rnw.sv
+../testbench/multiple_rnw.sv
+../testbench/single_rw.sv
+../testbench/multiple_rw.sv
+../testbench/write_full.sv
+../testbench/read_empty.sv
+../testbench/rw_empty.sv
+../testbench/rw_full.sv
+../testbench/tb_top_fifo.sv
+77
+which_declare=declare -f
+no_proxy=localhost,127.0.0.1
+https_proxy=http://proxy.hcm.fpt.vn:80
+http_proxy=http://proxy.hcm.fpt.vn:80
+__MODULES_LMINIT=module use --append /usr/share/Modules/modulefiles:module use --append /etc/modulefiles:module use --append /usr/share/modulefiles
+XDG_SESSION_TYPE=tty
+XDG_SESSION_ID=54
+XDG_SESSION_CLASS=user
+XDG_RUNTIME_DIR=/run/user/1009
+XDG_DATA_DIRS=/home/intern/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share
+XA_HOME=/opt/synopsys/xa/X-2025.06-SP2-2
+VSCODE_PYTHON_AUTOACTIVATE_GUARD=1
+VSCODE_IPC_HOOK_CLI=/run/user/1009/vscode-ipc-1d7fe38d-733e-4722-9a3f-7d20dbd2a7b1.sock
+VSCODE_GIT_IPC_HANDLE=/run/user/1009/vscode-git-988edc2098.sock
+VSCODE_GIT_ASKPASS_NODE=/home/intern/.vscode-server/cli/servers/Stable-1b6a188127eeaf9194f945eb6eb89a657e93c54c/server/node
+VSCODE_GIT_ASKPASS_MAIN=/home/intern/.vscode-server/cli/servers/Stable-1b6a188127eeaf9194f945eb6eb89a657e93c54c/server/extensions/git/dist/askpass-main.js
+VSCODE_GIT_ASKPASS_EXTRA_ARGS=
+VMR_MODE_FLAG=64
+VERDI_HOME=/opt/synopsys/verdi/X-2025.06
+VCS_PYTHON3=/opt/synopsys/vcs/X-2025.06/linux64/bin/Python3/bin/python3
+VCS_PATHMAP_PRELOAD_DONE=1
+VCS_MX_HOME_INTERNAL=1
+VCS_MODE_FLAG=64
+VCS_LOG_FILE=comp.log
+VCS_INTERNAL_CONVERTEDLIBS=
+VCS_HOME=/opt/synopsys/vcs/X-2025.06
+VCS_EXEC_DONE=1
+VCS_DEPTH=0
+VCS_ARG_ADDED_FOR_TMP=1
+VCS_ARCH=linux64
+UNAME=/bin/uname
+TOOL_HOME=/opt/synopsys/vcs/X-2025.06/linux64
+TERM_PROGRAM_VERSION=1.130.0
+TERM_PROGRAM=vscode
+SYSTEMC_HOME=/opt/arm/fastmodels/SystemC/Accellera/SystemC
+SSH_CONNECTION=172.27.54.26 41502 172.27.54.9 2702
+SSH_CLIENT=172.27.54.26 41502 2702
+SNPS_VERDI_INTERNAL_LP_XML_NEW_FLOW=1
+SNPS_VCS_VHDL_WRAPPER_KDB=1
+SNPS_VCS_PYTHON3=/opt/synopsys/vcs/X-2025.06/linux64/bin/Python3/bin/python3
+SNPS_VCS_CLANG_PATH=/opt/synopsys/vcs/X-2025.06/linux64/clang
+SNPS_INTERNAL_VCS_LINUX_OS=linux
+SELINUX_USE_CURRENT_RANGE=
+SELINUX_ROLE_REQUESTED=
+SELINUX_LEVEL_REQUESTED=
+SCRNAME=vcs
+SCRIPT_NAME=vcs
+PVLIB_HOME=/opt/arm/fastmodels/FastModelsPortfolio_11.30
+PETALINUX=/opt/xilinx
+OVA_UUM=0
+MOTD_SHOWN=pam
+MODULES_RUN_QUARANTINE=LD_LIBRARY_PATH LD_PRELOAD
+MODULES_CMD=/usr/share/Modules/libexec/modulecmd.tcl
+MODULESHOME=/usr/share/Modules
+MODULEPATH=/etc/scl/modulefiles:/etc/scl/modulefiles:/etc/scl/modulefiles:/usr/share/Modules/modulefiles:/etc/modulefiles:/usr/share/modulefiles
+MFLAGS=
+MAXCORE_HOME=/opt/arm/fastmodels/FastModelsTools_11.30
+MAKE_TERMOUT=/dev/pts/36
+MAKE_TERMERR=/dev/pts/36
+MAKELEVEL=1
+MAKEFLAGS=
+LOADEDMODULES=
+LESSOPEN=||/usr/bin/lesspipe.sh %s
+LC_ALL=C
+KDEDIRS=/usr
+HISTCONTROL=ignoredups
+GIT_ASKPASS=/home/intern/.vscode-server/cli/servers/Stable-1b6a188127eeaf9194f945eb6eb89a657e93c54c/server/extensions/git/dist/askpass.sh
+DEBUGINFOD_IMA_CERT_PATH=/etc/keys/ima:
+DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1009/bus
+CPLUS_INCLUDE_PATH=/opt/arm/fastmodels/SystemC/Accellera/SystemC/include:/opt/arm/fastmodels/SystemC/Accellera/SystemC/include:/opt/arm/fastmodels/SystemC/Accellera/SystemC/include:
+COLORTERM=truecolor
+BASH_FUNC_which%%=() {  ( alias;_ eval ${which_declare} ) | /usr/bin/which --tty-only --read-alias --read-functions --show-tilde --show-dot $@_}
+BASH_FUNC_scl%%=() {  if [ "$1" = "load" -o "$1" = "unload" ]; then_ eval "module $@";_ else_ /usr/bin/scl "$@";_ fi_}
+BASH_FUNC_module%%=() {  local _mlredir=1;_ if [ -n "${MODULES_REDIRECT_OUTPUT+x}" ]; then_ if [ "$MODULES_REDIRECT_OUTPUT" = '0' ]; then_ _mlredir=0;_ else_ if [ "$MODULES_REDIRECT_OUTPUT" = '1' ]; then_ _mlredir=1;_ fi;_ fi;_ fi;_ case " $@ " in _ *' --no-redirect '*)_ _mlredir=0_ ;;_ *' --redirect '*)_ _mlredir=1_ ;;_ esac;_ if [ $_mlredir -eq 0 ]; then_ _module_raw "$@";_ else_ _module_raw "$@" 2>&1;_ fi_}
+BASH_FUNC_ml%%=() {  module ml "$@"_}
+BASH_FUNC__module_raw%%=() {  eval "$(/usr/bin/tclsh '/usr/share/Modules/libexec/modulecmd.tcl' bash "$@")";_ _mlstatus=$?;_ return $_mlstatus_}
+ARM_GCC_HOME=/opt/arm/arm-gnu-toolchain/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi
+0
+0
+26
+1748765798 /opt/synopsys/vcs/X-2025.06/linux64/packages/snps_msv_nettype_pkg/AN.DB
+1785553180 ../testbench/tb_top_fifo.sv
+1785553050 ../testbench/rw_full.sv
+1785553083 ../testbench/rw_empty.sv
+1785552390 ../testbench/read_empty.sv
+1785552863 ../testbench/write_full.sv
+1785552828 ../testbench/multiple_rw.sv
+1785552938 ../testbench/single_rw.sv
+1785552288 ../testbench/multiple_rnw.sv
+1785553488 ../testbench/single_rnw.sv
+1785490413 ../testbench/base_test.sv
+1785553382 ../component/env_fifo.sv
+1785493907 ../component/scb_fifo.sv
+1785490094 ../component/monitor_fifo.sv
+1785486145 ../component/driver_fifo.sv
+1785490308 ../component/gen_fifo.sv
+1785479633 ../component/trans_fifo.sv
+1785487023 ../component/inf_fifo.sv
+1785402955 ../component/fifo_pkg.sv
+1785378889 ../rtl/fifo.v
+1785552383 ../testbench/testbench.f
+1785402881 ../component/component.f
+1785311965 ../rtl/rtl.f
+1785401081 compile.f
+1748749539 /opt/synopsys/verdi/X-2025.06/share/PLI/VCS/LINUX64/verdi.tab
+1748747165 /opt/synopsys/vcs/X-2025.06/linux64/lib/vcsdp_lite.tab
+4
+1748749132 /opt/synopsys/vcs/X-2025.06/linux64/lib/libvirsim.so
+1748748097 /opt/synopsys/vcs/X-2025.06/linux64/lib/liberrorinf.so
+1748748087 /opt/synopsys/vcs/X-2025.06/linux64/lib/libsnpsmalloc.so
+1748748085 /opt/synopsys/vcs/X-2025.06/linux64/lib/libvfs.so
+1785553504 simv.daidir
+-1 partitionlib

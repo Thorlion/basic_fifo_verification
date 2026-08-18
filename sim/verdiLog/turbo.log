@@ -1,0 +1,3 @@
+Command Line: /opt/synopsys/verdi/X-2025.06/platform/LINUXAMD64/bin/Novas -dbdir simv.daidir -ssf wave.fsdb
+uname(Linux hw-station-10 5.14.0-687.20.1.el9_8.x86_64 #1 SMP PREEMPT_DYNAMIC Tue Jun 30 06:22:49 EDT 2026 x86_64)
+KdbImportParallelMixAllLib time 0.001925 0.000735 0.001078 delta 4038656 4038656 total 1028243456 1028243456
